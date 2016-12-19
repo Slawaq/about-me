@@ -1,0 +1,22 @@
+{
+  "name": "about-me",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Slawaq/about-me.git"
+  },
+  "author": "slawaq",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Slawaq/about-me/issues"
+  },
+  "homepage": "https://github.com/Slawaq/about-me#readme",
+  "dependencies": {
+    "pug": "^2.0.0-beta6"
+  }
+}
