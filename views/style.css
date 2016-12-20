@@ -1,0 +1,53 @@
+body {
+    background-color: #17161B;
+    font-family: Helvetica, Arial, sans-serif
+}
+
+.menu {
+    text-align: center;
+}
+
+.menu-item {
+    display: inline-block;
+    margin: 0px 20px;
+    height: 40px;
+    cursor: pointer;
+    border-top: 0px;
+    text-align: center;
+}
+
+.menu-item-button a {
+    padding-top: 20px;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 20px;
+    color: silver;
+    border-top: 3px solid rgba(0,0,0,0);
+}
+
+.menu-item-button_selected a, .menu-item-button a:hover {
+    border-top: 3px solid ghostwhite;
+    color: ghostwhite;
+}
+
+.menu-item-button a:hover {
+    -webkit-transition: color 1s ease-out;
+    -moz-transition: color 1s ease-out;
+    -o-transition: color 1s ease-out;
+    transition: color 1s ease-out;
+
+    -webkit-transition: border-top-color 1s ease-out ;
+    -moz-transition: border-top-color 1s ease-out;
+    -o-transition: border-top-color 1s ease-out;
+    transition: border-top-color 1s ease-out;
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Chrome/Safari/Opera */
+     -khtml-user-select: none; /* Konqueror */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  not supported by any browser */
+}

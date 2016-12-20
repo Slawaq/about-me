@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "parallelshell \"sudo nodemon\" \"browser-sync start --files views/*.*\""
   },
   "repository": {
     "type": "git",
@@ -17,7 +17,11 @@
   },
   "homepage": "https://github.com/Slawaq/about-me#readme",
   "dependencies": {
+    "compression": "^1.6.2",
     "express": "^4.14.0",
     "pug": "^2.0.0-beta6"
+  },
+  "devDependencies": {
+    "parallelshell": "^2.0.0"
   }
 }
