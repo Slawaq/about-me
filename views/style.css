@@ -92,3 +92,12 @@ body {
             user-select: none; /* Non-prefixed version, currently
                                   not supported by any browser */
 }
+
+.avatar {
+    display: inline-block;
+}
+
+.avatar-label {
+    margin-top: 30px;
+    display: inline-block;
+}
