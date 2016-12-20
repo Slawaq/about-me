@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "parallelshell \"sudo nodemon\" \"browser-sync start --files views\""
+    "dev": "parallelshell \"nodemon\" \"browser-sync start --files views\""
   },
   "repository": {
     "type": "git",
