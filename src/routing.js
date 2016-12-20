@@ -12,9 +12,6 @@ var pages = [{
 },{
   path: '/contacts', 
   name: 'contacts'
-},{
-  path: '/magic', 
-  name: 'magic'
 }]
 
 module.exports = app => {
