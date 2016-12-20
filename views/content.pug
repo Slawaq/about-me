@@ -1,0 +1,14 @@
+div(class="content")
+  case page
+    when '/'
+      include ./pages/home
+    when '/biography'
+      include ./pages/biography
+    when '/products'
+      include ./pages/products
+    when '/contacts'
+      include ./pages/contacts
+    default
+      include ./pages/home
+      
+  

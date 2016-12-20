@@ -1,24 +1,25 @@
 'use strict'
+const xss = require('xss');
 
 var pages = [{
   path: '/', 
-  name: 'home'
+  name: 'Home'
 },{
   path: '/biography', 
-  name: 'biography'
+  name: 'Biography'
 },{
   path: '/products', 
-  name: 'products'
+  name: 'Products'
 },{
   path: '/contacts', 
-  name: 'contacts'
+  name: 'Contacts'
 }]
 
 let isDev = req => ['127.0.0.1','localhost'].indexOf(req.hostname) !== -1
 
 module.exports = app => {
   app.get(pages.map(x => x.path), (req, res) => {
-    res.render('index', { page: req.path, pages, isDev: isDev(req) })
+    res.render('index', { page: xss(req.path), pages, isDev: isDev(req) })
   })
 
   app.use((req, res, next) => {

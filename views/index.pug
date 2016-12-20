@@ -1,8 +1,10 @@
 html
   head
-    title Viacheslav Pytel | Personal
-    link(href="reset.css", rel="stylesheet")
-    link(href="style.css", rel="stylesheet")
+    title Viacheslav Pytel | #{page.name}
+    link(href="//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css", rel="stylesheet", type="text/css")
+    link(href="reset.css", rel="stylesheet", type="text/css")
+    link(href="style.css", rel="stylesheet", type="text/css")
   body
     include ./header.pug
+    include ./content.pug
     include ./browserSync.pug

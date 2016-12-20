@@ -2,4 +2,3 @@ div(class="menu noselect")
   - for(let p of pages)
     div(class="menu-item")
       span(class="menu-item-button " + (page === p.path ? 'menu-item-button_selected' : '')) <a href="#{p.path}">#{p.name}</a>
-      
